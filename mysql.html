@@ -1,0 +1,267 @@
+<html>
+  <head>
+		<title>CodStack</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+    <style>
+ html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#sidebar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+h2 {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#documentation h2 {
+  text-align: left;
+  margin: 0px;
+}
+
+#sidebar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#sidebar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#sidebar .nav-item {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#documentation {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+pre {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.hscroll {
+  overflow-x: auto;
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #sidebar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #sidebar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #documentation {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #documentation {
+    margin-left: -10px;
+  }
+}
+
+    </style>
+<body>
+  <!-- Header -->
+  <header id="header" class="skel-layers-fixed">
+    <h1><a href="#">CodStack</a></h1>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="database.html">DBMS</a></li>
+            <li><a href="#">MYSQL</a></li>
+            <li><a href="plsql.html">PLSQL</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+      </ul>
+    </nav>
+  </header>
+    <nav id="sidebar">
+      <h2>SQL Tutorial</h2>
+      <ul>
+		<li><a href="#">Introduction</a> </li>
+
+		<li><a href="#">Data and Database</a></li>
+		<li><a href="sqlpage.html">How to Create a Database</a></li>
+		<li><a href="sqlpage.html">Drop the Database</a></li>
+
+		<li><a href="sqlpage.html">Table</a></li>
+		<li><a href="sqlpage.html">Create a Table</a></li>
+		<li><a href="sqlpage.html">Drop a Table</a></li>
+		<li><a href="sqlpage.html">Truncate Table</a></li>
+
+		<li><a href="sqlpage.html">SQL Basic Queries</a></li>
+		<li><a href="sqlpage.html">SELECT</a></li>
+		<li><a href="sqlpage.html">WHERE</a></li>
+		<li><a href="sqlpage.html">AND, OR, NOT
+		</a></li>
+		<li><a href="sqlpage.html">INSERT INTO</a></li>
+		<li><a href="sqlpage.html">AGGREGATE FUNCTIONS</a></li>
+		<li><a href="sqlpage.html">GROUP BY, HAVING, ORDER BY</a></li>
+		<li><a href="sqlpage.html">NULL</a></li>
+		<li><a href="sqlpage.html">UPDATE & DELETE</a></li>
+		<li><a href="sqlpage.html">IN & BETWEEN OPERATORS</a></li>
+		<li><a href="sqlpage.html">ALIASES IN SQL</a></li>
+    </ul>
+    </nav>
+    <main id="documentation">
+      <section id="Introduction">
+        <h2>Introduction</h2>
+        <p>SQL Tutorial is well suited for beginners as well as experienced professionals, where you'll get to learn SQL from basic to advanced levels in an easy & organized manner.</p>
+       <h1>What is SQL?</h1>
+       <ul>
+        <li>SQL stands for Structured Query Language</li>
+        <li>SQL lets you access and manipulate databases</li>
+        <li>SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987</li>
+       </ul>
+       <img src="https://seeklogo.com/images/M/mysql-logo-69B39F7D18-seeklogo.com.png" alt="sql">
+       <h1>What Can SQL do?</h1>
+       <ul><li>SQL can execute queries against a database</li>
+       <li>SQL can retrieve data from a database</li>
+       <li>SQL can insert records in a database</li>
+       <li>SQL can update records in a database</li>
+       <li>SQL can delete records from a database</li>
+       <li>SQL can create new databases</li>
+       <li>SQL can create new tables in a database</li>
+       <li>SQL can create stored procedures in a database</li>
+       <li>SQL can create views in a database</li>
+       <li>SQL can set permissions on tables, procedures, and views</li></ul>
+       <h1>Process of SQL</h1>
+       
+       <p>When we are executing the command of SQL on any Relational database management system, then the system automatically finds the best routine to carry out our request, and the SQL engine determines how to interpret that particular command.</p>
+       <br>
+       <p>Structured Query Language contains the following four components in its process:</p>
+       <ul><li>Query Dispatcher</li>
+       <li>Optimization Engines</li>
+       <li>Classic Query Engine</li>
+       <li>SQL Query Engine, etc.
+    </li></ul>
+    <p>A classic query engine allows data professionals and users to maintain non-SQL queries. The architecture of SQL is shown in the following diagram:</p>
+    <img src="https://totallynoob.com/wp-content/uploads/2015/05/mysql-logo-354x258.jpg" alt="sql">
+     </div>
+     
+     <footer id="footer">
+      <div class="container">
+        <div class="row double">
+          <div class="6u">
+            <div class="row collapse-at-2">
+              <div class="6u">
+                <ul class="alt">
+                  <li><a href="#">Name</a></li>
+                  <li><a href="#">Courses</a></li>
+                  <li><a href="#"></a>Location</li>
+                </ul>
+              </div>
+              <div class="6u">
+                <ul class="alt">
+                  <li><a href="#">CodStack</a></li>
+                  <li><a href="#">DBMS</a></li>
+                  <li><a href="#">PGGC SEC-11CHD</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="6u">
+            <h2>CodStack</h2>
+            <p>Here you learn about the Data Base Management System so Leran and Create</p>
+            <ul class="icons">
+              <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+              <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+              <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="copyright">
+          <li>&copy; Untitled. All rights reserved.</li>
+          <li>Design: <a href="http://templated.co">Vinay Khanduri</a></li>
+        </ul>
+      </div>
+    </footer>
+	
+  </html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CodStack</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-layers.min.js"></script>
+	<script src="js/init.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-xlarge.css" />
+	</noscript>
+
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.nav{
+    width: 100%;
+    text-align: center;
+}
+nav .logo{
+    /* margin: 20px 0; */
+    padding-top: 15px;
+    text-align: center;
+    cursor: pointer;
+    color:black;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+align-items: center;
+    
+}
+nav .nav-links{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+
+}
+nav .nav-links a{
+    text-decoration: none;
+    margin: 15px 30px;
+    color: white;
+    letter-spacing: 2px;
+    /* word-spacing: 4px; */
+    text-align: center;
+
+}
+nav .nav-links a:hover{
+  color: #3da9fc;
+  text-decoration:none;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+ 
+  body{
+     background-color: #f3f5f9;
+  }
+  
+  
+  .content{
+    padding: 5%;
+
+  }
+  .content h2{
+    text-align: left;
+  }
+  .content .syntax p{
+    background-color:rgb(152, 240, 240) ;
+    padding: 3%;
+    
+    margin: 3%;
+    border-radius: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    
+    
+  }
+  
+  img{
+    align-items: center;
+    width: 80%;
+    margin: 6%;
+  }
+  .content ul li {
+    list-style: disc;
+    
+  }
+  </style>
+<body>
+    <header id="header" class="skel-layers-fixed">
+		<h1><a href="#">CodStack</a></h1>
+		<nav id="nav">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="database.html">DBMS</a></li>
+				<li><a href="mysql.html">MYSQL</a></li>
+				<li><a href="plsql.html">PLSQL</a></li>
+				<li><a href="about.html">ABOUT US</a></li>
+			</ul>
+		</nav>
+	</header>
+    <section class="special">
+        <h3>Create Databases</h3>
+        <p>Syntax
+            CREATE DATABASE databasename;
+            </p>
+    </section>
+    <hr>
+    <section class="special">
+        <h3>Drop Databases</h3>
+        <p>Syntax
+            DROP DATABASE databasename; 
+            </p>
+    </section>
+    <hr>
+    <section class="special">
+        <h3>Create Table</h3>
+        <p>Syntax
+            CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+); 
+            </p>
+    </section>
+    <hr>
+    <section class="special">
+        <h3>Drop Databases</h3>
+        <p>Syntax
+            DROP TABLE table_name; 
+            </p>
+    </section>
+ 
+    <hr>
+    <section class="special">
+        <h3>Select</h3>
+        <p>Syntax
+            SELECT column1, column2, ...
+FROM table_name; 
+            </p>
+    </section>
+    <hr>
+    <section class="special">
+        <h3>Where</h3>
+        <p>Syntax
+            SELECT column1, column2, ...
+FROM table_name
+WHERE condition; 
+            </p>
+    </section>
+    <hr>
+    <section class="special">
+        <h3>And,Or$Not</h3>
+        <p>Syntax-
+            And
+            SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+Or
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...; 
+Not
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+
+            </p>
+    </section>
+    <hr>
+    <section class="special">
+        <h3>Insert into</h3>
+        <p>Syntax
+            INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...); 
+            </p>
+    </section>
+    <hr>
+    <section class="special">
+        <h3>AGGREGATE FUNCTIONS</h3>
+        <p>Syntax
+            CREATE DATABASE databasename;
+            </p>
+    </section>
+    <hr>
+    <section class="special">
+        <h3>GROUP BY, HAVING, ORDER BY</h3>
+        <p>yntax-SELECT column_name(s)
+            FROM table_name
+            WHERE condition
+            GROUP BY column_name(s)
+            ORDER BY column_name(s); ,Having
+            ELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s);,Order by
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+</p>
+    </section>
+    <hr>
+    <section class="special">
+        <h3>NULL</h3>
+        <p>yntax
+            SELECT column_names
+            FROM table_name
+            WHERE column_name IS NULL; </p>
+    </section>
+    <hr>
+    <section class="special">              
+        <h3>IN & BETWEEN OPERATORS</h3>
+        <p>Syntax-In
+            SELECT column_name(s)
+            FROM table_name
+            WHERE column_name IN (value1, value2, ...);
+            
+            or:
+            SELECT column_name(s)
+            FROM table_name
+            WHERE column_name IN (SELECT STATEMENT); or Between
+            SELECT column_name(s)
+            FROM table_name
+            WHERE column_name BETWEEN value1 AND value2;
+            </p>
+    </section>
+    <hr>
+    <section class="special">
+         <h3>UPDATE & DELETE</h3>
+        <p>Syntax-UpdateUPDATE table_name
+            SET column1 = value1, column2 = value2, ...
+            WHERE condition; or DeleteDELETE FROM table_name WHERE condition;</p>
+    </section>
+    <hr>
+    
+        <footer id="footer">
+            <div class="container">
+                <div class="row double">
+                    <div class="6u">
+                        <div class="row collapse-at-2">
+                            <div class="6u">
+                                <ul class="alt">
+                                    <li><a href="#">Name</a></li>
+                                    <li><a href="#">Courses</a></li>
+                                    <li><a href="#"></a>Location</li>
+                                </ul>
+                            </div>
+                            <div class="6u">
+                                <ul class="alt">
+                                    <li><a href="#">CodStack</a></li>
+                                    <li><a href="#">DBMS</a></li>
+                                    <li><a href="#">PGGC SEC-11CHD</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="6u">
+                        <h2>CodStack</h2>
+                        <p>Here you learn about the Data Base Management System so Leran and Create</p>
+                        <ul class="icons">
+                            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="copyright">
+                    <li>&copy; Untitled. All rights reserved.</li>
+                    <li>Design: <a href="http://templated.co">Vinay Khanduri</a></li>
+                </ul>
+            </div>
+        </footer>
+    
